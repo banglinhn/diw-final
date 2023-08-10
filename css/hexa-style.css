@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+.introduce{width: 100%; height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url("../images2/banner-top.jpg"); background-size: cover; background-position: center; padding: 0 8%; position: relative;}
+.cover3{position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,0.65); left: 0; top: 0}
+
+.text-box{color: #fff; position: absolute; bottom: 8%}
+.text-box h1{font-size: 190px; line-height: 160px; margin-left: -10px; color: transparent;
+	-webkit-text-stroke: 3px rgba(255,193,7,1.00);
+	background: url("../images/back.png");
+	-webkit-background-clip: text;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+}
+
+@keyframes back{
+	100%{background-position: 2000px 0;}
+}
+.text-box h3{font-size: 40px; font-weight: 500; color: rgba(255,193,7,1.00)}
+@media (max-width:1170px){.introduce{display: none}}
+
+.navbar .navbar-nav .nav-item .nav-link{padding: 8px 20px; font-size: 17px; font-weight: 600; border-radius: 20px}
+.navbar .navbar-nav .nav-item .nav-link:hover{background-color: black; color: white}
+.navbar .navbar-nav .nav-item .dropdown-menu{background-color: black; padding-top: 0; padding-bottom: 0; width: 230px}
+.navbar .navbar-nav .nav-item .dropdown-menu li{border-bottom: 1px dashed #666666}
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item{color: white; transition: all 0.6s}
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{padding-left: 30px; color: rgba(255,193,7,1.00); background-color: #666666}
+.box{width: 100%; height: 100%; background-color: #eeeeee; padding: 15px; text-align: center; display: flex; flex-direction: column; justify-content: center}
+
+main{width: 100%; min-height: 800px}
+footer {z-index: 100}
+footer .navbar-nav .nav-item .nav-link{padding: 10px}
+footer .navbar-nav .nav-item .nav-link:hover{color: rgba(255,193,7,1.00)}
+@media (max-width:667px){footer{text-align: center}}
+
+
+.border-bot{border-bottom: dashed 3px rgba(135,135,71,1.00)}
+.banner-r{position: relative}
+.cover{position: absolute; width: 90%; height: 90%; background-color: rgba(0,0,0,0.80); left: 5%; top: 5%; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; transform: scale(0) rotateY(360deg); transition: all 0.5s}
+.banner-r:hover .cover{transform: scale(1) rotateY(0)}
+.hidden{overflow: hidden}
+
+.hinh{position: relative; overflow: hidden}
+.icon{position: absolute; width: 80%; height: 45px; left: 10%; top: 105%; display: flex; justify-content: space-around; transition: all 0.8s}
+.icon a{height: 45px; width: 45px; background-color: rgba(255,193,7,1.00); color: black; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none}
+.icon a:hover{background-color: white; color: black}
+.hinh:hover .icon{top: 60%}
+
+#media .instagram{position: relative; overflow: hidden}
+#media .cover2{position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,0.80); left: 0; top: 100%; color: white; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end; transition: all 0.7s}
+#media .cover2 a{color: white}
+#media .cover2 a:hover{color: red}
+#media .instagram:hover .cover2{top: 0}
+@media (max-width: 667px){#media .cover2{display: none}}
+
+#sp-men .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#sp-men .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black;
+}
+
+#sp-men .owl-nav .owl-next{ position:absolute; right:-2%;}
+#sp-men .owl-nav .owl-prev{ position:absolute; left:-2%;}
+#sp-men .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: rgba(255,193,7,1.00);
+      text-decoration: none; }
+
+#sp-women .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#sp-women .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black;
+}
+
+#sp-women .owl-nav .owl-next{ position:absolute; right:-2%;}
+#sp-women .owl-nav .owl-prev{ position:absolute; left:-2%;}
+#sp-women .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: rgba(255,193,7,1.00);
+      text-decoration: none; }
+
+#sp-kid .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#sp-kid .owl-nav [class*='owl-'] {
+	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: black;
+}
+
+#sp-kid .owl-nav .owl-next{ position:absolute; right:-2%;}
+#sp-kid .owl-nav .owl-prev{ position:absolute; left:-2%;}
+#sp-kid .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color: rgba(255,193,7,1.00);
+      text-decoration: none; }
+
+#page-header{
+width: 100%; min-height: 300px; background-image: url("../images2/about-banner.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative; display: flex; justify-content: center; align-items: center;
+}
+.caption{
+color: white; text-align: center; width: 30%; margin-top: 30px;
+}
+
+#about .social-icon{
+	height: 45px; width: 100%; display: flex; margin-top: 30px
+}
+#about .social-icon .box{
+	width: 45px; height: 45px; background-color: #DC3545; border-radius: 50%; margin-right: 20px; 
+}
+#about .social-icon .box a{
+	color: black; text-decoration: none
+}
+#about .social-icon .box:hover{
+	background-color: black
+}
+#about .social-icon .box:hover a{
+	color: rgba(255,193,7,1.00)
+}
+
+
+#team .team{
+	position: relative
+}
+#team .team-cover{
+	position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,0.60); left: 0; top: 0; display: flex; align-items: center; opacity: 0; transition: all 0.8s
+}
+#team .social{position: absolute; width: 80%; left: 10%; height: 45px; display: flex;justify-content: space-around}
+#team .social a{height: 45px; width: 45px; background-color: #DC3545; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; color: black}
+#team .social a:hover{background-color: black; color: rgba(255,193,7,1.00)}
+#team .team:hover .team-cover{opacity: 1}
+
+
+
+.banner-s{background-position: center center; background-repeat: no-repeat; background-size: cover; background-image: url("../images2/carousel-bg-2.jpg")}
+
